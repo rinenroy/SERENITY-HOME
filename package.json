@@ -1,0 +1,27 @@
+{
+  "name": "serenity-home",
+  "version": "1.0.0",
+  "description": "Serenity Home",
+  "author": "Serenity Home",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis portable"
+  },
+  "build": {
+    "appId": "com.serenity.home",
+    "productName": "Serenity Home",
+    "files": ["electron/**", "www/**"],
+    "win": { "target": ["nsis", "portable"] },
+    "directories": { "output": "dist" }
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.0",
+    "@capacitor/cli": "^6.1.0",
+    "@capacitor/core": "^6.1.0"
+  }
+}

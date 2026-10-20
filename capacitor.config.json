@@ -1,0 +1,6 @@
+{
+  "appId": "com.serenity.home",
+  "appName": "Serenity Home",
+  "webDir": "www",
+  "server": { "androidScheme": "https" }
+}
